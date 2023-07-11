@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <title>상단 반응형</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        a{
+            color: #333;
+            float: left;
+        }
+        .logo{
+            width: 130px;
+            height: 50px;
+            float: left;
+            padding: 8px;
+        }
+        .logo img{
+            width: 130px;
+            height: 50px;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+        .center li{
+            padding: 20px;
+            display: flex;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .head{
+            width: 100%;
+            height: 60px;
+            background-color: #fff;
+            border-bottom: 1px solid #333;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+        }
+        .right li{
+            float: left;            
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 10px;
+        }
+        @media screen and (min-width:0px){
+            .head {
+                width: 100%;
+                height: 60px;
+            }
+            .center ul li{
+                width: 100%;
+            }
+            .right ul li{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="wrap">
+        <div><p>130 x 50</p></div><div><h2>ABOUT US</h2></div><div><H2>PRODUCTS</H2></div><div><h2>IR</h2></div><div><h2>SUSTAINABILITY</h2></div><div><h2>PR</h2></div><div><h2>SUPPORT</h2></div><div><h2>로그인  가입</h2></div>
+    </div> -->
+    <div class="head">
+        <div class="logo">
+            <img src="bet.png" alt="">
+        </div>
+        <ul class="center">
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">IR</a></li>
+            <li><a href="#">SUSTAINABILITY</a></li>
+            <li><a href="#">PR</a></li>
+            <li><a href="#">SUPPORT</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">가입하기</a></li>
+        </ul>
+    </div>
+</body>
+</html>
